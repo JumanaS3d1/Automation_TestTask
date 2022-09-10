@@ -1,0 +1,62 @@
+<suite name="First Suite">
+
+
+	<test name="Test with params1">
+
+		<parameter name="shortA" value="2" />
+		<parameter name="longB" value="3" />
+		<parameter name="height" value="4" />
+		<parameter name="Area" value="10" />
+
+		<classes>
+			<class name="TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters" />
+		</classes>
+	</test>
+	
+	<test name="Test with params2">
+
+		<parameter name="shortA" value="-3" />
+		<parameter name="longB" value="3" />
+		<parameter name="height" value="6" />
+		<parameter name="Area" value="7" />
+
+		<classes>
+			<class name="TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters" />
+		</classes>
+	</test>
+
+	<test name="Test with params3">
+
+		<parameter name="shortA" value="0" />
+		<parameter name="longB" value="3" />
+		<parameter name="height" value="0" />
+		<parameter name="Area" value="8" />
+ 
+		<classes>
+			<class name="TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters" />
+		</classes>
+	</test>
+
+	<test name="Test Rectangle">
+
+		<parameter name="width" value="1" />
+		<parameter name="height" value="3" />
+		<parameter name="area" value="3" />
+
+		<classes>
+			<class name="TestNG_JUnit_Task.TestNG_JUnit_Task.TestRectangleWithparameters" />
+		</classes>
+	</test>	
+	
+	<test name="Test Rectangle with 0 height">
+
+		<parameter name="width" value="1" />
+		<parameter name="height" value="0" />
+		<parameter name="area" value="3" />
+
+		<classes>
+			<class name="TestNG_JUnit_Task.TestNG_JUnit_Task.TestRectangleWithparameters" />
+		</classes>
+	</test>
+
+</suite>

@@ -3,11 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG_JUnit_Task.TestNG_JUnit_Task.TestNGWithparameters">
+      <class name="TestNG_JUnit_Task.TestNG_JUnit_Task.Shape_DataProviderTest">
         <methods>
-          <include name="testWithParams"/>
+          <include name="testData_Circle" invocation-numbers="2 5"/>
+          <include name="testData_Triangle" invocation-numbers="3"/>
+          <include name="testData_Ellipse" invocation-numbers="3 5"/>
+          <include name="testData_Sector" invocation-numbers="0 4"/>
+          <include name="testData_Parallelogram" invocation-numbers="0 4"/>
+          <include name="testData_Square" invocation-numbers="2 4 5"/>
         </methods>
-      </class> <!-- TestNG_JUnit_Task.TestNG_JUnit_Task.TestNGWithparameters -->
+      </class> <!-- TestNG_JUnit_Task.TestNG_JUnit_Task.Shape_DataProviderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

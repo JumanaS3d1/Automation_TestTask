@@ -52,6 +52,7 @@ public class Shape_DataProviderTest {
 		Square sq = new Square(lenInt);
 		assertEquals(sq.getArea(), areaInt);
 	}
+	
 
 	@Test(dataProvider = "CircleData")
 	public void testData_Circle(String radius, String area) {

@@ -1,6 +1,6 @@
 package TestNG_JUnit_Task.TestNG_JUnit_Task;
 
-public class Parallelogram extends Shape {
+public class Parallelogram extends Shape{
 
 	double base;
 	double height;

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 10 10:30:49 IDT 2022</td>
+<td>Started on:</td><td>Mon Sep 12 07:57:56 IDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (4 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (5 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,23 +76,24 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters.testRectangleWithParams()'><b>testRectangleWithParams</b><br>Test class: TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;width&apos; is required by @Test on method testRectangleWithParams but has not been marked @Optional or defined
-in D:\0_Techlinich\TestingTask\TestNG_JUnit_Task\TestNGWithparameters.xml
+<td title='TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters.testTrapezoidWithParams()'><b>testTrapezoidWithParams</b><br>Test class: TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters<br>Parameters: 0, 3, 0, 8</td>
+<td><div><pre>java.lang.AssertionError: expected [8.0] but found [0.0]
+	at TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters.testTrapezoidWithParams(TestTrapezoidWithparameters.java:18)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1190820921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1190820921'><pre>org.testng.TestNGException: 
-Parameter &apos;width&apos; is required by @Test on method testRectangleWithParams but has not been marked @Optional or defined
-in D:\0_Techlinich\TestingTask\TestNG_JUnit_Task\TestNGWithparameters.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1600667055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1600667055'><pre>java.lang.AssertionError: expected [8.0] but found [0.0]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEquals(Assert.java:727)
+	at org.testng.Assert.assertEquals(Assert.java:762)
+	at TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters.testTrapezoidWithParams(TestTrapezoidWithparameters.java:18)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -116,24 +117,23 @@ in D:\0_Techlinich\TestingTask\TestNG_JUnit_Task\TestNGWithparameters.xml
 <td>0</td>
 <td>TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters@7b9a4292</td></tr>
 <tr>
-<td title='TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters.testTrapezoidWithParams()'><b>testTrapezoidWithParams</b><br>Test class: TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters<br>Parameters: 0, 3, 0, 8</td>
-<td><div><pre>java.lang.AssertionError: expected [8.0] but found [0.0]
-	at TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters.testTrapezoidWithParams(TestTrapezoidWithparameters.java:18)
+<td title='TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters.testRectangleWithParams()'><b>testRectangleWithParams</b><br>Test class: TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;width&apos; is required by @Test on method testRectangleWithParams but has not been marked @Optional or defined
+in D:\0_Techlinich\TestingTask\TestNG_JUnit_Task\TestNGWithparameters.xml
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1248234350", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1248234350'><pre>java.lang.AssertionError: expected [8.0] but found [0.0]
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.failNotEquals(Assert.java:1413)
-	at org.testng.Assert.assertEquals(Assert.java:727)
-	at org.testng.Assert.assertEquals(Assert.java:762)
-	at TestNG_JUnit_Task.TestNG_JUnit_Task.TestTrapezoidWithparameters.testTrapezoidWithParams(TestTrapezoidWithparameters.java:18)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace532087022", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace532087022'><pre>org.testng.TestNGException: 
+Parameter &apos;width&apos; is required by @Test on method testRectangleWithParams but has not been marked @Optional or defined
+in D:\0_Techlinich\TestingTask\TestNG_JUnit_Task\TestNGWithparameters.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:267)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:888)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:917)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)

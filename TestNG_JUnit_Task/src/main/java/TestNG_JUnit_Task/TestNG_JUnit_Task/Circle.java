@@ -1,8 +1,12 @@
 package TestNG_JUnit_Task.TestNG_JUnit_Task;
 
+import java.text.DecimalFormat;
+
 public class Circle extends Shape {
 
 	double r;
+	private static final DecimalFormat dfZero = new DecimalFormat("0.000");
+	
 
 	public Circle(double r) {
 		try {
@@ -19,7 +23,8 @@ public class Circle extends Shape {
 	public double getArea() {
 
 		try {
-			return (Math.PI * Math.pow(this.r, 2));
+			double result =(Math.PI * Math.pow(this.r, 2));
+			return Double.parseDouble(dfZero.format(result));
 		} catch (Exception e) {
 			return 0;
 		}

@@ -1,9 +1,12 @@
 package TestNG_JUnit_Task.TestNG_JUnit_Task;
 
+import java.text.DecimalFormat;
+
 public class Ellipse extends Shape{
 
 	double a_axis;
 	double b_axis;
+	private static final DecimalFormat dfZero = new DecimalFormat("0.000");
 
 	public Ellipse(double a_axis, double b_axis) {
 		try {
@@ -24,7 +27,8 @@ public class Ellipse extends Shape{
 	public double getArea() {
 
 		try {
-			return (Math.PI * (this.a_axis * this.b_axis));
+			double result= (Math.PI * (this.a_axis * this.b_axis));
+			return Double.parseDouble(dfZero.format(result));
 		} catch (Exception e) {
 			return 0;
 		}
